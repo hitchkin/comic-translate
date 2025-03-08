@@ -68,8 +68,6 @@ def load_translation(app, language: str):
         '한국어': 'ko',
         'Français': 'fr',
         '日本語': 'ja',
-        '简体中文': 'zh_CN',
-        '繁體中文': 'zh_TW',
         'русский': 'ru',
         'Deutsch': 'de',
         'Nederlands': 'nl',
