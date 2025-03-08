@@ -42,13 +42,6 @@ def main():
 def get_system_language():
     locale = QLocale.system().name()  # Returns something like "en_US" or "zh_CN"
     
-    # Special handling for Chinese
-    if locale.startswith('zh_'):
-        if locale in ['zh_CN', 'zh_SG']:
-            return '简体中文'
-        elif locale in ['zh_TW', 'zh_HK']:
-            return '繁體中文'
-    
     # For other languages, we can still use the first part of the locale
     lang_code = locale.split('_')[0]
     
